@@ -1,3 +1,4 @@
+import fawltyTowers.Booking;
 import fawltyTowers.Guest;
 import fawltyTowers.Hotel;
 import fawltyTowers.rooms.Bedroom;
@@ -19,6 +20,7 @@ public class HotelTest {
     private Guest guest2;
     private Room room1;
     private Room room2;
+//    private Booking booking;
 
     @Before
     public void before(){
@@ -55,4 +57,15 @@ public class HotelTest {
         hotel.removeGuestFromRoom(guest2, room1);
         assertEquals(1, room1.getGuestList().size());
     }
+
+    @Test
+    public void canBookRoom(){
+        Booking booking = new Booking(room1, 5);
+        assertEquals(5, booking.getNumOfNights());
+    }
+
+//    @Test
+//    public void bookRoomReturnsBooking(){
+//        assertEquals( , hotel.bookRoom(room1, 5, guest));
+//    }
 }
