@@ -17,5 +17,12 @@ public class Hotel {
         return roomArrayList;
     }
 
-//CREATE CHECK IN'S AND CHECK OUT'S METHODS
+    public void addGuestToRoom(Guest guest, Room room){
+        room.addGuest(guest);
+    }
+
+    public void removeGuestFromRoom(Guest guest, Room room){
+        room.removeGuest(guest);
+    }
+
 }

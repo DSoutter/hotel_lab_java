@@ -24,4 +24,14 @@ public abstract class Room {
     public ArrayList<Guest> getGuestList() {
         return guestList;
     }
+
+    public void addGuest(Guest guest){
+        guestList.add(guest);
+    }
+
+    public void removeGuest(Guest guest){
+        guestList.remove(guest);
+    }
+
+
 }
