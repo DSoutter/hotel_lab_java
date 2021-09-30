@@ -16,4 +16,6 @@ public class Hotel {
     public ArrayList<Room> getRoomArrayList() {
         return roomArrayList;
     }
+
+//CREATE CHECK IN'S AND CHECK OUT'S METHODS
 }

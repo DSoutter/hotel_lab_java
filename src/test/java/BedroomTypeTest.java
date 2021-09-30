@@ -14,9 +14,9 @@ public class BedroomTypeTest {
         bedroom = new Bedroom(1, RoomType.SINGLE);
     }
 
-//    @Test
-//    public void canGetBedroomType(){
-//        assertEquals(BedroomType.SINGLE, bedroom.getBedroomType());
-//    }
+    @Test
+    public void canGetBedroomType(){
+        assertEquals(RoomType.SINGLE, bedroom.getRoomType());
+    }
 
 }
