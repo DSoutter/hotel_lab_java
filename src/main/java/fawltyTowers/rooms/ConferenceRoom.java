@@ -1,4 +1,4 @@
-package fawltyTowers.roomType;
+package fawltyTowers.rooms;
 
 public class ConferenceRoom {
 }

@@ -1,13 +1,15 @@
-package fawltyTowers.roomType;
+package fawltyTowers.rooms;
 
-public enum BedroomType {
+public enum RoomType {
 
     SINGLE(1),
-    DOUBLE(2);
+    DOUBLE(2),
+    CONFERENCE(50);
+
 
     private final int value;
 
-    BedroomType(int value){
+    RoomType(int value){
         this.value = value;
     }
 

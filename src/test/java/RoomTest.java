@@ -1,5 +1,6 @@
-import fawltyTowers.roomType.BedroomType;
-import fawltyTowers.roomType.Room;
+import fawltyTowers.rooms.Bedroom;
+import fawltyTowers.rooms.RoomType;
+import fawltyTowers.rooms.Room;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,6 +12,11 @@ public class RoomTest {
 
     @Before
     public void before(){
-        room = new Bedroom(1, BedroomType.SINGLE);
+        room = new Bedroom(1, RoomType.SINGLE);
     }
+    @Test
+    public void checkRoomCapacity(){
+        assertEquals(1, room.getCapacity());
+    }
+
 }
